@@ -56,5 +56,20 @@ public class TreeNode {
         node.getRight().setLeft(new TreeNode(19));
         return node;
     }
+    
+    public TreeNode createBT1(){
+        TreeNode node = new TreeNode(50);
+        node.setLeft(new TreeNode(20));
+        node.setRight(new TreeNode(80));
+        node.getLeft().setRight(new TreeNode(17));
+        node.getLeft().getRight().setLeft(new TreeNode(23));
+        node.getLeft().setLeft(new TreeNode(15));
+        node.getLeft().getLeft().setLeft(new TreeNode(120));
+        node.getLeft().getLeft().getLeft().setRight(new TreeNode(1));
+        node.getRight().setLeft(new TreeNode(19));
+        return node;
+    }
+    
+    
 
 }
