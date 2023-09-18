@@ -35,7 +35,8 @@ public class TreeNode {
     public void setRight(TreeNode right) {
         this.right = right;
     }
-    public TreeNode createBT(){
+
+    public TreeNode createBT() {
         TreeNode node = new TreeNode(50);
         node.setLeft(new TreeNode(20));
         node.setRight(new TreeNode(80));
@@ -44,8 +45,8 @@ public class TreeNode {
         node.getRight().setLeft(new TreeNode(19));
         return node;
     }
-    
-    public TreeNode createBT1(){
+
+    public TreeNode createBT1() {
         TreeNode node = new TreeNode(50);
         node.setLeft(new TreeNode(20));
         node.setRight(new TreeNode(80));
@@ -57,7 +58,7 @@ public class TreeNode {
         node.getRight().setLeft(new TreeNode(19));
         return node;
     }
-    
+
     public TreeNode createBST() {
         TreeNode treeNode = new TreeNode(7);
         treeNode.setLeft(new TreeNode(2));
@@ -75,7 +76,7 @@ public class TreeNode {
         treeNode.getRight().getRight().getLeft().setRight(new TreeNode(12));
         return treeNode;
     }
-    
+
     public void printTreeInOrder(TreeNode tn) {
         if (tn != null) {
             printTreeInOrder(tn.getLeft());
@@ -83,7 +84,28 @@ public class TreeNode {
             printTreeInOrder(tn.getRight());
         }
     }
-    
-    
+
+    /**
+     * node* root = newNode(20);
+     * root->left = newNode(8);
+     * root->right = newNode(22);
+     * root->left->left = newNode(4);
+     * root->left->right = newNode(12);
+     * root->left->right->left = newNode(10);
+     * root->left->right->right = newNode(14);
+     *
+     * @return
+     */
+    public TreeNode createBST1() {
+        TreeNode tn = new TreeNode(20);
+        tn.setLeft(new TreeNode(8));
+        tn.setRight(new TreeNode(22));
+        tn.getLeft().setLeft(new TreeNode(4));
+        tn.getLeft().setRight(new TreeNode(20));
+        tn.getLeft().getRight().setLeft(new TreeNode(10));
+        tn.getLeft().getRight().setRight(new TreeNode(14));
+        return tn;
+    }
+
 
 }
