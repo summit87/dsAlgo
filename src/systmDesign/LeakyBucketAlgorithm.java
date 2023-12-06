@@ -15,7 +15,7 @@ public class LeakyBucketAlgorithm {
     mapping.put("1", userBucket);
     for (int i = 0; i < 5; i++) {
       Instant lastUpdateTs = mapping.get("1").getLastUpdateTs();
-      Instant instant = lastUpdateTs.plusSeconds(1);
+      Instant instant = lastUpdateTs.plusSeconds(1) ;
       try {
         Thread.sleep(999);
       } catch (InterruptedException ie) {
