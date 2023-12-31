@@ -1,7 +1,5 @@
 package tree;
 
-import java.util.LinkedList;
-import java.util.Queue;
 
 public class LCAInBST {
     public static void main(String[] args) {

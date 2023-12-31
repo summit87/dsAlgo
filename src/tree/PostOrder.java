@@ -1,6 +1,7 @@
 package tree;
 
 import java.util.Stack;
+
 /*					50
 				20		80
 			  15  17   19
