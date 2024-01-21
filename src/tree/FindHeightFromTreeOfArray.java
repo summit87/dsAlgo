@@ -1,13 +1,17 @@
 package tree;
 
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.Map;
+import java.util.Queue;
 
 public class FindHeightFromTreeOfArray {
 	
 	public static void main(String[] args) {
 		int[] a = {-1, 0, 1, 6, 6, 0, 0, 2, 7};
 		System.out.println(depthOfTree1(a));
+		Queue<Integer> queue = new LinkedList<>();
+
 	}
 	
 	private static int depthOfTheTree(int[] a) {
