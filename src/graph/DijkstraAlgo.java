@@ -44,13 +44,16 @@ class DijGraphStructure {
   public void distraitAlgo(Integer src) {
     List<NodeVal> nodeValList = new ArrayList<>();
     Integer[] dist = new Integer[numberOfNode];
+    Integer[] path = new Integer[numberOfNode];
     for (int i = 0; i < numberOfNode; i++) {
       dist[i] = Integer.MAX_VALUE;
+      path[i] = -1;
     }
     dist[src] = 0;
     Queue<NodeVal> queue = new LinkedList<>();
     PriorityQueue<NodeVal> pq = new PriorityQueue<>(Comparator.comparing(NodeVal::getWeight));
     pq.add(new NodeVal(0, 0));
+    path[0] = -1;
     while (!pq.isEmpty()) {
       NodeVal v = pq.poll();
       DijGraphNode node = map.get(v.getDest());
@@ -60,6 +63,7 @@ class DijGraphStructure {
         if (dist[d.getDest()] > x) {
           dist[d.getDest()] = x;
           pq.add(new NodeVal(d.getDest(), x));
+          path[d.getDest()] = v.getDest();
         }
         node = node.getNext();
       }
@@ -67,7 +71,17 @@ class DijGraphStructure {
 
     for (int i = 1; i < numberOfNode; i++) {
       System.out.println("Src : " + src + " , " + " Dest : " + i + " -> " + dist[i]);
+      printPath(path,i);
+      System.out.println();
     }
+  }
+
+  public void printPath(Integer[] path, int p) {
+    if (path[p] == -1) {
+      return;
+    }
+    printPath(path, path[p]);
+    System.out.print(path[p] + " -> ");
   }
 
   private void addEdge(Integer src, NodeVal nodeVal) {
