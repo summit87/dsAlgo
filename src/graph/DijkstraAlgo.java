@@ -3,18 +3,21 @@ package graph;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Scanner;
 import java.util.Set;
 
 public class DijkstraAlgo {
-  public static void main(String[] args) {
-
+  public static void main(String[] args) throws FileNotFoundException {
+    DijGraphStructure dijGraphStructure = new DijGraphStructure("g2.txt");
+    dijGraphStructure.distraitAlgo(0);
   }
 }
 
@@ -45,24 +48,25 @@ class DijGraphStructure {
       dist[i] = Integer.MAX_VALUE;
     }
     dist[src] = 0;
-    Queue<Integer> queue = new LinkedList<>();
-    queue.add(src);
-    while (!queue.isEmpty()) {
-      Integer v = queue.poll();
-      DijGraphNode node = map.get(v);
+    Queue<NodeVal> queue = new LinkedList<>();
+    PriorityQueue<NodeVal> pq = new PriorityQueue<>(Comparator.comparing(NodeVal::getWeight));
+    pq.add(new NodeVal(0, 0));
+    while (!pq.isEmpty()) {
+      NodeVal v = pq.poll();
+      DijGraphNode node = map.get(v.getDest());
       while (node != null) {
         NodeVal d = node.getVal();
-        int x = dist[d.getDest()] + d.getWeight();
+        int x = dist[v.getDest()] + d.getWeight();
         if (dist[d.getDest()] > x) {
           dist[d.getDest()] = x;
-          queue.add(d.getDest());
+          pq.add(new NodeVal(d.getDest(), x));
         }
         node = node.getNext();
       }
     }
 
     for (int i = 1; i < numberOfNode; i++) {
-      System.out.print(src + " -> " + dist[i]);
+      System.out.println("Src : " + src + " , " + " Dest : " + i + " -> " + dist[i]);
     }
   }
 
