@@ -16,11 +16,8 @@ import java.util.Set;
 
 public class DijkstraAlgo {
   public static void main(String[] args) throws FileNotFoundException {
-    //    DijGraphStructure dijGraphStructure = new DijGraphStructure("g2.txt");
-    //    dijGraphStructure.distraitAlgo(0);
-    boolean b =true;
-    b= (b != false);
-    System.out.println(b);
+        DijGraphStructure dijGraphStructure = new DijGraphStructure("g2.txt");
+        dijGraphStructure.distraitAlgo(0);
   }
 }
 
