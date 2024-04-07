@@ -1,6 +1,6 @@
 package backtracking;
 
-public class KnightSolution {
+public class KnightSolutionTraversingInColumn {
   public static void main(String[] args) {
     int n=4;
     int[][] mat = new int[n][n];
@@ -56,16 +56,6 @@ public class KnightSolution {
       }
       //return;
     }
-    for (int i=0;i<n;i++){
-     for (int j=0;j<n;j++){
-        System.out.print(ld[i+(j*n)]+",");
-     }
-      System.out.println();
-    }
-    System.out.println("RD..........");
-    for (int i=0;i<n*n;i++){
-      System.out.print(rd[i]+",");
-    }
 
 
   }
@@ -109,6 +99,7 @@ public class KnightSolution {
 
   private static boolean solution1(int[][] mat ,int col, int n,int[] ld,int[] rd,int[] cl) {
     if(col >= n){
+
       return true;
     }
     for (int i=0;i<n;i++){
