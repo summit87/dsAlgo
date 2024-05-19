@@ -107,5 +107,23 @@ public class TreeNode {
         return tn;
     }
 
+    /**
+     *       1
+            /   \
+           2     3
+         /   \
+        4     5
+     * @return
+     */
+
+    public TreeNode createMorissTree() {
+        TreeNode tn = new TreeNode(1);
+        tn.setLeft(new TreeNode(2));
+        tn.setRight(new TreeNode(3));
+        tn.getLeft().setLeft(new TreeNode(4));
+        tn.getLeft().setRight(new TreeNode(5));
+        return tn;
+    }
+
 
 }
