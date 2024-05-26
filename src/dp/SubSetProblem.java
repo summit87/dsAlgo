@@ -5,10 +5,11 @@ package dp;
  */
 public class SubSetProblem {
 	public static void main(String[] args){
-		int[] a =  {3, 34, 4, 12, 5, 2};
-		int sum = 12;
-    System.out.println(sumSubSet(a,sum,a.length));
-    System.out.println(sumSubsetDP(a,sum));
+		int[] a =  {1,2,3};
+		int sum = 4;
+   // System.out.println(sumSubSet(a,sum,a.length));
+   sumSubsetDP(a,sum);
+    System.out.println();
 	}
 
 	private static boolean sumSubSet(int[] a, int sum, int length) {
@@ -36,6 +37,12 @@ public class SubSetProblem {
 					b[i][j] = b[i-1][j-a[i-1]]||b[i-1][j];
 				}
 			}
+		}
+		for(int i=0;i<=a.length;i++){
+			for(int j=0;j<=sum;j++){
+				System.out.print(b[i][j]+",");
+			}
+			System.out.println();
 		}
 		return b[a.length][sum];
 	}

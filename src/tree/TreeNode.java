@@ -126,4 +126,38 @@ public class TreeNode {
     }
 
 
+    /**
+     * 
+     * @return
+     */
+    public TreeNode averageTree(){
+        TreeNode tn = new TreeNode(4);
+        tn.setLeft(new TreeNode(8));
+        tn.setRight(new TreeNode(5));
+        tn.getLeft().setLeft(new TreeNode(0));
+        tn.getLeft().setRight(new TreeNode(1));
+        tn.getRight().setRight(new TreeNode(6));
+        return tn;
+    }
+
+    public TreeNode averageTree1(){
+        TreeNode tn = new TreeNode(0);
+        return tn;
+    }
+
+    public TreeNode averageTree2(){
+        TreeNode tn = new TreeNode(0);
+        tn.setLeft(new TreeNode(0));
+        tn.setRight(new TreeNode(0));
+        return tn;
+    }
+
+    public TreeNode averageTree3(){
+        TreeNode tn = new TreeNode(5);
+        tn.setLeft(new TreeNode(3));
+        tn.setRight(new TreeNode(8));
+        return tn;
+    }
+
+
 }

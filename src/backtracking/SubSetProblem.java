@@ -22,11 +22,11 @@ public class SubSetProblem {
       return;
     }
     for (int i = index; i < val.length; i++) {
-      set.add(val[i]);
+     // set.add(val[i]);
       sum -= val[i];
       list.add(val[i]);
       calculate(val, sum, set, list, i + 1);
-      set.remove(set.size() - 1);
+     // set.remove(set.size() - 1);
       int v = list.remove(list.size() - 1);
       sum += v;
     }
