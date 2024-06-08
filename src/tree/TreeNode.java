@@ -159,5 +159,35 @@ public class TreeNode {
         return tn;
     }
 
+    public TreeNode tree(){
+        TreeNode tn = new TreeNode(10);
+        tn.setLeft(new TreeNode(20));
+        tn.setRight(new TreeNode(5));
+        tn.getRight().setLeft(new TreeNode(9));
+        tn.getLeft().setRight(new TreeNode(6));
+        tn.getLeft().setLeft(new TreeNode(5));
+        tn.getLeft().getLeft().setRight(new TreeNode(20));
+        return tn;
+    }
+
+    public TreeNode tree1(){
+        TreeNode tn = new TreeNode(10);
+        tn.setLeft(new TreeNode(3));
+        tn.setRight(new TreeNode(4));
+        tn.getLeft().setLeft(new TreeNode(2));
+        tn.getLeft().setRight(new TreeNode(1));
+        return tn;
+    }
+
+    public TreeNode tree2(){
+        TreeNode tn = new TreeNode(10);
+        tn.setLeft(new TreeNode(4));
+        tn.setRight(new TreeNode(3));
+        tn.getLeft().setLeft(new TreeNode(2));
+        tn.getLeft().setRight(new TreeNode(1));
+        return tn;
+    }
+
+
 
 }
