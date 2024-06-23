@@ -10,7 +10,7 @@ package tree;
 public class MorrisTraversal {
     public static void main(String[] args) {
         TreeNode tn = new TreeNode();
-        morrisInorderTraversal(tn.createMorissTree());
+        morrisTraversal(tn.createMorissTree());
     }
 
     /**
