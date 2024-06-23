@@ -13,7 +13,6 @@ public class OneApp {
 
   public static void main(String[] args) throws FileNotFoundException {
     countTrip("trip.txt");
-    // System.out.println(14/4);
   }
 
   private static int countTrip(String fileName) throws FileNotFoundException {
@@ -50,13 +49,11 @@ public class OneApp {
         for (; i < 4; i++) {
           if (trip.get(i - 1).getTimestamp() > trip.get(i).getTimestamp()
               || trip.get(i - 1).getPetrolPoint() > trip.get(i).getPetrolPoint()) {
-            System.out.println(map1.getKey());
             break;
           }
         }
 
         if (i == trip.size()) {
-          System.out.println(map1.getKey());
           countTrip++;
         }
       }
