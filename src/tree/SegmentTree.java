@@ -51,6 +51,7 @@ public class SegmentTree {
             tree[iIndex] = tree[iIndex]+diff;
         }
         int mid = st+((end-st)/2);
+        
         if(st != end){
             updateTree(tree,2*iIndex+1,st,mid,diff,updatedIndex);
             updateTree(tree,2*iIndex+2,mid+1,end,diff,updatedIndex);
