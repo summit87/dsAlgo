@@ -1,6 +1,7 @@
 package tree;
 
 public class TreeNode {
+
     private Integer data;
     private TreeNode left;
     private TreeNode right;
@@ -80,18 +81,17 @@ public class TreeNode {
     public void printTreeInOrder(TreeNode tn) {
         if (tn != null) {
             printTreeInOrder(tn.getLeft());
-            System.out.print(tn.getData() + ",");
+            if (tn.getData() != null) {
+                System.out.print(tn.getData() + ",");
+            }
             printTreeInOrder(tn.getRight());
         }
     }
 
     /**
-     * node* root = newNode(20);
-     * root->left = newNode(8);
-     * root->right = newNode(22);
-     * root->left->left = newNode(4);
-     * root->left->right = newNode(12);
-     * root->left->right->left = newNode(10);
+     * node* root = newNode(20); root->left = newNode(8); root->right =
+     * newNode(22); root->left->left = newNode(4); root->left->right =
+     * newNode(12); root->left->right->left = newNode(10);
      * root->left->right->right = newNode(14);
      *
      * @return
@@ -108,14 +108,14 @@ public class TreeNode {
     }
 
     /**
-     *       1
-            /   \
-           2     3
-         /   \
-        4     5
+     * 1
+     * / \
+     * 2 3
+     * / \
+     * 4 5
+     *
      * @return
      */
-
     public TreeNode createMorissTree() {
         TreeNode tn = new TreeNode(1);
         tn.setLeft(new TreeNode(2));
@@ -125,12 +125,11 @@ public class TreeNode {
         return tn;
     }
 
-
     /**
-     * 
+     *
      * @return
      */
-    public TreeNode averageTree(){
+    public TreeNode averageTree() {
         TreeNode tn = new TreeNode(4);
         tn.setLeft(new TreeNode(8));
         tn.setRight(new TreeNode(5));
@@ -140,26 +139,26 @@ public class TreeNode {
         return tn;
     }
 
-    public TreeNode averageTree1(){
+    public TreeNode averageTree1() {
         TreeNode tn = new TreeNode(0);
         return tn;
     }
 
-    public TreeNode averageTree2(){
+    public TreeNode averageTree2() {
         TreeNode tn = new TreeNode(0);
         tn.setLeft(new TreeNode(0));
         tn.setRight(new TreeNode(0));
         return tn;
     }
 
-    public TreeNode averageTree3(){
+    public TreeNode averageTree3() {
         TreeNode tn = new TreeNode(5);
         tn.setLeft(new TreeNode(3));
         tn.setRight(new TreeNode(8));
         return tn;
     }
 
-    public TreeNode tree(){
+    public TreeNode tree() {
         TreeNode tn = new TreeNode(10);
         tn.setLeft(new TreeNode(20));
         tn.setRight(new TreeNode(5));
@@ -170,7 +169,7 @@ public class TreeNode {
         return tn;
     }
 
-    public TreeNode tree1(){
+    public TreeNode tree1() {
         TreeNode tn = new TreeNode(10);
         tn.setLeft(new TreeNode(3));
         tn.setRight(new TreeNode(4));
@@ -179,7 +178,7 @@ public class TreeNode {
         return tn;
     }
 
-    public TreeNode tree2(){
+    public TreeNode tree2() {
         TreeNode tn = new TreeNode(10);
         tn.setLeft(new TreeNode(4));
         tn.setRight(new TreeNode(3));
@@ -188,6 +187,25 @@ public class TreeNode {
         return tn;
     }
 
+    public TreeNode bst1() {
+        TreeNode tn = new TreeNode(11);
+        tn.setLeft(new TreeNode(2));
+        tn.setRight(new TreeNode(29));
+        tn.getLeft().setLeft(new TreeNode(1));
+        tn.getLeft().setRight(new TreeNode(7));
+        tn.getRight().setLeft(new TreeNode(15));
+        tn.getRight().setRight(new TreeNode(40));
+        tn.getRight().getRight().setLeft(new TreeNode(35));
+        return tn;
+    }
 
+    public TreeNode bst2() {
+        TreeNode tn = new TreeNode(9);
+        tn.setLeft(new TreeNode(6));
+        tn.setRight(new TreeNode(15));
+        tn.getLeft().setLeft(new TreeNode(3));
+        tn.getRight().setRight(new TreeNode(21));
+        return tn;
+    }
 
 }

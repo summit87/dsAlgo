@@ -6,7 +6,8 @@ public class Bitwise1 {
         //  leftShift();
         //  rightShift();
          //System.out.println(isNumberPowerOf2(16));
-         System.out.println(checkIfIthBitSetOrNot(7,3));
+         //System.out.println(checkIfIthBitSetOrNot(7,3));
+         System.out.println(extractLastBit(0));
        
 
     }
@@ -80,6 +81,25 @@ public class Bitwise1 {
          System.out.println(x+" : "+(num & x));
          return (num & x) > 0;
      }
+
+
+     /**
+      * Extract last bit from number
+      1. calculate the binary represenatational
+      2. flip all the bit from number
+      3. add one to last bit in result
+      * @param x
+      * @return
+      */
+     public static int extractLastBit(int x){
+        return (x+(x&-x));
+     }
+
+
+
+
+
+
 
 }
 
