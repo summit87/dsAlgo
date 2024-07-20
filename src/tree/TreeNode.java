@@ -208,4 +208,23 @@ public class TreeNode {
         return tn;
     }
 
+    public TreeNode createTree1(){
+        TreeNode tn = new TreeNode(10);
+        tn.setLeft(new TreeNode(5));
+        tn.getLeft().setLeft(new TreeNode(1));
+        tn.getLeft().setRight(new TreeNode(8));
+        tn.setRight(new TreeNode(15));
+        tn.getRight().setRight(new TreeNode(9));
+        return tn;
+    }
+
+
+    public TreeNode createTree2(){
+        TreeNode tn = new TreeNode(50);
+        tn.setLeft(new TreeNode(75));
+        tn.getLeft().setLeft(new TreeNode(45));
+        tn.setRight(new TreeNode(45));
+        return tn;
+    }
+
 }
