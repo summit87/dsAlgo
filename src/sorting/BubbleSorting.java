@@ -1,5 +1,9 @@
 package sorting;
 
+/**
+ * IN bubble sort we will push the max element to the right in the array
+ */
+
 public class BubbleSorting {
 
     public static void main(String[] args) {
