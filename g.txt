@@ -1,0 +1,31 @@
+```
+//Warm up question:
+Given a grid of size (N x N), cells S and T, impassable cells with water,
+find if an S->T path exists, assuming we can only move horizontally/vertically.
+No coding required, only explain how you would solve this problem.
+
+// Main Question:
+A mouse is trying to get from its starting position S to a target T.
+The problem is that there is a sleeping cat C on the grid.
+The closer the mouse approaches the cat, the higher the chance of
+the cat to wake up. So, the mouse wants to get to T, staying as far
+away as possible from the cat C.
+
+Formally, assume again a square grid of size (N x N), allowing only
+horizontal and vertical moves, impassable cells with water,
+and cells S, T, and C. We want to find a path from S to T
+for which the minimal distance to C along the path is maximal.
+
+Example
+........
+.....S.
+.C**.**
+........
+.......
+.......
+....T...
+
+Output - 4
+
+
+```

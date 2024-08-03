@@ -38,7 +38,7 @@ public class CountOfSmallerElementInRightOfElement {
             }
             k++;
         }
-        count[m-l-1]+=cnt;
+        
         while (i1 < n1) {
             a[k] = left[i1];
             i1++;
