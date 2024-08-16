@@ -2,8 +2,8 @@ package stringP;
 
 public class AnagramSearching {
     public static void main(String[] args) {
-        String pattern = "ABCD";
-        String text = "BACDGABCDA";
+        String pattern = "AABA";
+        String text = "AABAACAADAABAABA";
         anagramSearching(text, pattern);
     }
 

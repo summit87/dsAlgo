@@ -87,8 +87,12 @@ public class TrieNode {
     if (null == trieNode || trieNode.getMap().isEmpty()) {
       return;
     }
-    for (TrieNode t : trieNode.getMap().values()) {
-      print(t, str + String.valueOf(t.getNode()), list);
+    // for (TrieNode t : trieNode.getMap().values()) {
+    //   print(t, str + String.valueOf(t.getNode()), list);
+    // }
+
+    for (Map.Entry<Character,TrieNode> map  : trieNode.getMap().entrySet()) {
+      print(map.getValue(), str + String.valueOf(map.getKey()), list);
     }
   }
 }
