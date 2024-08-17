@@ -5,12 +5,7 @@ public class RangeMinimumQuery {
     public static void main(String[] args) {
         int[] a = {4,6,1,5,7,3};
         int[][] lookup = lookupTable(a);
-        for(int i=0;i<lookup.length;i++){
-            for(int j=0;j<lookup[i].length;j++){
-                System.out.print(lookup[i][j]+",");
-            }
-            System.out.println();
-        }
+        System.out.println(getMin(1, 5, lookup, a));
 
     }
 
@@ -31,4 +26,11 @@ public class RangeMinimumQuery {
         }
         return lookup;
     }
+
+    private static int getMin(int l,int r,int[][] lookup,int[] a){
+        int k = (int) Math.log(r-l+1);
+        return Math.min(a[lookup[l][k]], a[lookup[r-(int)Math.pow(2, k-1)][k]]);
+    }
+
+    
 }
