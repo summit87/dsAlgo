@@ -5,11 +5,11 @@ package dp;
  */
 public class ZeroOneKnapsack {
     public static void main(String[] args) {
-        int[] p = {10,15,40};
-        int[] w = {1,2,3};
-        int len = 3;
-        int weight = 6;
-        // System.out.println(getMaxProfit(w, p, len, weight));
+        int[] p = {40, 100, 50, 60};
+        int[] w = {20, 10, 40, 30};
+        int len = 4;
+        int weight = 60;
+        //System.out.println(getMaxProfit(w, p, len, weight));
 
         System.out.println(getMaxProfitDP(w, p, weight));
     }
@@ -47,14 +47,32 @@ public class ZeroOneKnapsack {
             }
         }
 
-        for(int i=0;i<=weight.length;i++){
-            for(int j=0;j<=w;j++){
-                System.out.print(arr[i][j]+",");
+        // for(int i=0;i<=weight.length;i++){
+        //     for(int j=0;j<=w;j++){
+        //         System.out.print(arr[i][j]+",");
+        //     }
+        //     System.out.println();
+        // }
+        printItem(arr, weight, w);
+        return arr[weight.length][w];
+    }
+
+    private static void printItem(int[][] arr,int[] weight,int bagCapacity){
+
+        int res = arr[weight.length][bagCapacity];
+        int ind = weight.length;
+        int capacity = bagCapacity;
+        while(ind >= 1){
+
+            if(capacity >= weight[ind-1]){
+                System.out.println(weight[ind-1]);
+                res = res - arr[ind-1][capacity - weight[ind-1]];
+                capacity = capacity - weight[ind - 1];
             }
-            System.out.println();
+            ind--;
         }
 
-        return arr[weight.length][w];
+
     }
 
 }
