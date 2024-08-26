@@ -1,4 +1,4 @@
-package array;
+package array.slidingWindow;
 
 public class MaxsumSubarray {
 
