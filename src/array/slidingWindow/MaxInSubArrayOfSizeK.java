@@ -6,11 +6,11 @@ import dp.LIS;
 
 public class MaxInSubArrayOfSizeK {
     public static void main(String[] args) {
-        int[] a = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        int[] a = { 8, 5, 10, 7, 9, 4, 15, 12, 90, 13 };
         // maxInSubArray(a, 4);
-        maxElementInKWindow(a, 3);
+        maxElementInKWindow(a, 4);
         System.out.println();
-        maxInSubArrayOfSizeK(a, 3);
+         maxInSubArrayOfSizeK(a,4);
     }
 
     private static void maxInSubArray(int[] a, int k) {
@@ -45,7 +45,6 @@ public class MaxInSubArrayOfSizeK {
      * Using dequeue
      * TC : O(2N), actually every element will be touched by atmost two times,
      * so final TC will be O(2N) => O(N)
-     * 
      * @param a
      * @param k
      */
@@ -64,7 +63,7 @@ public class MaxInSubArrayOfSizeK {
                 deque.pollLast();
             }
 
-            while (!deque.isEmpty() && a[deque.peekFirst()] <= a[i]) {
+            while(!deque.isEmpty() && a[deque.peekFirst()] <= a[i]){
                 deque.pollFirst();
             }
             deque.addLast(i);
@@ -75,40 +74,39 @@ public class MaxInSubArrayOfSizeK {
 
     /**
      * This algo we are using here based on two pointer approach
-     * TC : Will be O(N*K) ,
+     * TC :  Will be O(N*K) ,
      *
      * @param a
      * @param k
      */
-    private static void maxInSubArrayOfSizeK(int[] a, int k) {
-        if (k == 1) {
-            for (int i = 0; i < a.length; i++) {
-                System.out.print(a[i] + ",");
+    private static void maxInSubArrayOfSizeK(int[] a,int k){
+        if(k == 1){
+            for(int i=0;i<a.length;i++){
+                System.out.print(a[i]+",");
             }
             return;
         }
         int start = 0;
-        int end = k - 1;
+        int end = k-1;
         /**
          * slideStart will be used to slide the left window to one position
          */
         int slideStart = 0;
-        int max = a[k - 1];
-        while (end < a.length) {
-            if (a[start] > max) {
+        int max = a[k-1];
+        while(end <a.length){
+            if(a[start] > max){
                 max = a[start];
             }
             start++;
-            if (end == start && start < a.length) {
-                System.out.print(max + ",");
+            if(end == start && start < a.length){
+                System.out.print(max+",");
                 end++;
                 slideStart++;
                 start = slideStart;
                 /**
-                 * Once we print first max element we need to reassing / initialize the max
-                 * value
+                 * Once we print first max element we need to reassing / initialize the max value
                  */
-                if (end < a.length) {
+                if(end < a.length){
                     max = a[end];
                 }
             }

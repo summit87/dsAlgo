@@ -24,6 +24,8 @@ public class CountNumberOfWays {
 		}
 		return count(mat, x + 1, y, row, col) + count(mat, x, y + 1, row, col);
 	}
+	// Time calculation
+	// The time complexity of this solution is O(2^N), where N is the number of cells in the matrix.
 	
 	private static boolean isValid(int[][] mat, int x, int y, int row, int col) {
 		return (x >= 0 && x < col && y >= 0 && y < row && mat[x][y] == 0);
