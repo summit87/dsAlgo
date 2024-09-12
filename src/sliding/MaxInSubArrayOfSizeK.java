@@ -1,4 +1,4 @@
-package array.slidingWindow;
+package sliding;
 
 import java.util.*;
 

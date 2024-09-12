@@ -1,4 +1,4 @@
-package array.slidingWindow;
+package sliding;
 
 public class MaxsumSubArrayOfSizeK {
     public static void main(String[] args) {
