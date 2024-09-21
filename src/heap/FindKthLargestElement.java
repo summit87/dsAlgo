@@ -100,7 +100,7 @@ class MaxHeap {
     public void update(int val, int x) {
         this.arr[x] = val;
 
-        while (x <= this.size && this.arr[parent(x)] > this.arr[x]) {
+        while (x <= this.size && this.arr[parent(x)] < this.arr[x]) {
             int temp = this.arr[parent(x)];
             this.arr[parent(x)] = this.arr[x];
             this.arr[x] = temp;
