@@ -52,17 +52,17 @@ class DijGraphStructure {
     dist[src] = 0;
     Queue<NodeVal> queue = new LinkedList<>();
     PriorityQueue<NodeVal> pq = new PriorityQueue<>(Comparator.comparing(NodeVal::getWeight));
-    pq.add(new NodeVal(0, 0));
+    queue.add(new NodeVal(0, 0));
     path[0] = -1;
-    while (!pq.isEmpty()) {
-      NodeVal v = pq.poll();
+    while (!queue.isEmpty()) {s
+      NodeVal v = queue.poll();
       DijGraphNode node = map.get(v.getDest());
       while (node != null) {
         NodeVal d = node.getVal();
         int x = dist[v.getDest()] + d.getWeight();
         if (dist[d.getDest()] > x) {
           dist[d.getDest()] = x;
-          pq.add(new NodeVal(d.getDest(), x));
+          queue.add(new NodeVal(d.getDest(), x));
           path[d.getDest()] = v.getDest();
         }
         node = node.getNext();

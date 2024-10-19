@@ -1,17 +1,15 @@
-package graph;
+
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
 
-public class DetectCycleUsingGraph {
+public class DetectCycleInDirectGraph {
     public static void main(String[] args) throws FileNotFoundException {
         Graph2 graph2 = new Graph2("cycle.txt");
-        System.out.println(graph2.map().get(0));
+        System.out.println(graph2.map().get(2));
 
-        for(int i=0;i<4;i++){
-            System.out.println(i+" : "+graph2.isCycleExistIn(i));
-        }
+        System.out.println(graph2.isCycleExistIn(0));
     }
 }
 
@@ -24,7 +22,7 @@ class Graph2 {
         visitedSet = new HashSet<>();
         Scanner sc = new Scanner(new File(fileName));
         while (sc.hasNext()) {
-            String[] s = sc.nextLine().split(",");
+            String[] s = sc.nextLine().split(",");  
             addEdge(mGraph, Integer.parseInt(s[0]), Integer.parseInt(s[1]));
         }
         sc.close();
@@ -55,10 +53,11 @@ class Graph2 {
             }
             visitedSet.add(vertex);
             List<Integer> list = mGraph.get(vertex);
+            if (list == null) {
+                continue;
+            }
             for (Integer ver : list) {
-                if (visitedSet.contains(ver)) {
-                    queue.add(ver);
-                }
+                queue.add(ver);
             }
         }
 
