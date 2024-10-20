@@ -89,7 +89,7 @@ class Graph10{
                 }
             }
         }
-        System.out.println(order.size());
+        System.out.println(total);
     }
 
 }
