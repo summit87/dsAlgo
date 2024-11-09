@@ -43,6 +43,14 @@ public class Kruskal {
         if (fRoot1 == fRoot2) {
             return true;
         }
+        /**
+         * if parent node size is more as compared to child , then we will add the child node parent node
+         *  arr[child] = parent
+         * size[parent] += size[child];
+         * 
+         * 
+         *  */ 
+        
 
         if (size[fRoot1] <= size[fRoot2]) {
             ds[fRoot1] = fRoot2;

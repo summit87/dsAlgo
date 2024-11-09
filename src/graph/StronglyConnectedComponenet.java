@@ -64,6 +64,9 @@ class Graph6 {
                     list.add(src);
                 }
             } else {
+                /**
+                 * This condition will cover backedge of b/w the nodes
+                 */
                 tree[src] = Math.min(tree[src], discovery[node]);
             }
         }
