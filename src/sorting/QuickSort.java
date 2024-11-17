@@ -22,7 +22,7 @@ public class QuickSort {
     int p = a[end];
     int i = st - 1;
     for (int j = st; j <= end - 1; j++) {
-      if (a[j] < p) {
+      if (a[j] > p) {
         i++;
         swap(a, i, j);
       }

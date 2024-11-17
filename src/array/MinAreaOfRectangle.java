@@ -1,25 +1,32 @@
 package array;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class MinAreaOfRectangle {
 
     public static void main(String[] args) {
 
         Map<Integer, Set<Integer>> map = new HashMap<>();
-        Integer[][] a = {
+        int[][] a = {
                 { 1, 1 },
                 { 1, 3 },
+                { 2, 2 },
                 { 3, 1 },
                 { 3, 3 },
                 { 2, 2 }
         };
+
+        
         Integer min = Integer.MAX_VALUE;
         for (int i = 0; i < a.length; i++) {
             map.putIfAbsent(a[i][0], new HashSet<>());
             map.get(a[i][0]).add(a[i][1]);
         }
-
+       
+        for(int i = 0;i<a.length;i++){
+            System.out.println(a[i][0]+" : "+a[i][1]);
+        }
         for (int i = 0; i < a.length - 1; i++) {
             for (int j = i + 1; j < a.length; j++) {
                 int x1 = a[i][0];
