@@ -5,16 +5,14 @@ public class LIS {
     static int max_res = Integer.MIN_VALUE;
 
     public static void main(String[] args) {
-        int[] a = { 10, 22, 9, 33, 21, 50, 41, 60 };
+        int[] a = {10,9,2,5,3,7,101,18};
         lis(a, a.length);
-        //System.out.println(max_res);
+        System.out.println(max_res);
         System.out.println(lisInDP(a,a.length));
     }
 
     private static int lis(int[] a, int length) {
-        if (length <= 0) {
-            return 0;
-        }
+       
         int res = 1;
         int max_end = 1;
         for (int i = 1; i < length; i++) {
