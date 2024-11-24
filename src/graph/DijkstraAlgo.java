@@ -54,7 +54,7 @@ class DijGraphStructure {
     PriorityQueue<NodeVal> pq = new PriorityQueue<>(Comparator.comparing(NodeVal::getWeight));
     queue.add(new NodeVal(0, 0));
     path[0] = -1;
-    while (!queue.isEmpty()) {s
+    while (!queue.isEmpty()) {
       NodeVal v = queue.poll();
       DijGraphNode node = map.get(v.getDest());
       while (node != null) {
