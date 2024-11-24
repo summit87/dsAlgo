@@ -5,14 +5,14 @@ public class LIS {
     static int max_res = Integer.MIN_VALUE;
 
     public static void main(String[] args) {
-        int[] a = {10,9,2,5,3,7,101,18};
+        int[] a = { 10, 9, 2, 5, 3, 7, 101, 18 };
         lis(a, a.length);
         System.out.println(max_res);
-        System.out.println(lisInDP(a,a.length));
+        System.out.println(lisInDP(a, a.length));
     }
 
     private static int lis(int[] a, int length) {
-       
+
         int res = 1;
         int max_end = 1;
         for (int i = 1; i < length; i++) {
@@ -27,18 +27,20 @@ public class LIS {
         return max_end;
     }
 
-    private static int lisInDP(int[] a,int length){
+    private static int lisInDP(int[] a, int length) {
         int[] lis = new int[length];
-        for(int i=0;i<length;i++){
+        for (int i = 0; i < length; i++) {
             lis[i] = 1;
         }
-        for(int i=1;i<length;i++){
-            for(int j=0;j<i;j++){
-                if(a[i] > a[j] && 1+lis[j] > lis[i]){
-                    lis[i] = 1+lis[j];
+        int ans = 1;
+        for (int i = 1; i < length; i++) {
+            for (int j = 0; j < i; j++) {
+                if (a[i] > a[j] && 1 + lis[j] > lis[i]) {
+                    lis[i] = 1 + lis[j];
                 }
             }
+            ans = Math.max(ans, lis[i]);
         }
-        return lis[length-1];
+        return ans;
     }
 }

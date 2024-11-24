@@ -4,9 +4,9 @@ public class LIS1 {
 
     static int maxLen  = Integer.MIN_VALUE;
     public static void main(String[] args) {
-        int[] a = {10,9,2,5,3,7,101,18};
-        lis(a, a.length-1);
-        System.out.println(maxLen);
+        int[] a = {0,1,0,3,2,3};
+        //lis(a, a.length-1);
+        //System.out.println(maxLen);
     }
 
     private static int lis(int[] a,int len){

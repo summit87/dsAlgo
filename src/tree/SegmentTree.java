@@ -3,11 +3,15 @@ package tree;
 public class SegmentTree {
 
     public static void main(String[] args) {
-        int[] a = {1, 3, 5, 7, 9, 11};
-        int[] tree = new int[4 * a.length];
+        int[] a = {1, 3, 5, 7, 9, 11,20};
+        int[] tree = new int[2 * a.length+1];
         buildTree(tree, 0, 0, a.length - 1, a);
         int newVal = 23;
         int diff = newVal - a[2];
+        for(int i=0;i<tree.length;i++){
+            System.out.print(tree[i]+",");
+        }
+        System.out.println();
         a[2] = newVal;
         
         System.out.println(getSum(tree, 0, 0, a.length - 1, 2, 4));
