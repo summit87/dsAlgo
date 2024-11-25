@@ -118,3 +118,87 @@
 * https://lnkd.in/gDAx6QQd
 *  Serverless Architecture
 * https://lnkd.in/gtS52Sza
+
+80% of System Design Interviews are based on 20% of the problems.
+
+Here is what you need to master.
+
+
+𝟭. 𝗦𝗰𝗮𝗹𝗮𝗯𝗹𝗲 𝗗𝗮𝘁𝗮 𝗦𝘁𝗼𝗿𝗮𝗴𝗲
+
+• Relational vs. NoSQL: Know when to use SQL vs. NoSQL databases.
+• Partitioning: Vertical and horizontal partitioning (sharding). Understand trade-offs.
+• Indexing: Covering indexes, primary vs. secondary indexes.
+• Consistency Models: Strong, eventual, causal.
+
+
+𝟐. 𝐂𝐚𝐜𝐡𝐢𝐧𝐠
+
+• Client-side vs. Server-side Cache: Understand where caching should happen.
+• Caching Strategies: Write-through, write-back, write-around.
+• Distributed Cache: Redis, Memcached. 
+• Cache Eviction Policies: LRU, LFU, etc.
+
+
+𝟑. 𝐋𝐨𝐚𝐝 𝐁𝐚𝐥𝐚𝐧𝐜𝐢𝐧𝐠
+
+• Horizontal Scaling: Why and how to horizontally scale services.
+• Load Balancing Techniques: Round-robin, consistent hashing.
+• Reverse Proxy: Understand how to use Nginx, HAProxy.
+
+
+𝟒. 𝐀𝐬𝐲𝐧𝐜𝐡𝐫𝐨𝐧𝐨𝐮𝐬 𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐢𝐧𝐠
+
+• Message Brokers: Kafka, RabbitMQ. When to use queues vs. streams.
+• Event-Driven Architecture: Benefits of decoupling and event sourcing.
+• Task Queues: For delayed jobs or retries.
+
+
+𝟓. 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞 𝐑𝐞𝐚𝐝 𝐚𝐧𝐝 𝐖𝐫𝐢𝐭𝐞 𝐒𝐜𝐚𝐥𝐢𝐧𝐠
+
+• Read Scaling: Master replication, read replicas.
+• Write Scaling: Challenges with partitioning for writes, leader-election.
+• CAP Theorem: Consistency, Availability, or Partition tolerance may be compromised.
+
+
+𝟲. 𝗗𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲𝗱 𝗦𝘆𝘀𝘁𝗲𝗺𝘀 𝗖𝗼𝗻𝗰𝗲𝗽𝘁𝘀
+
+• Consensus Algorithms: Paxos, Raft.
+• Conflict Resolution: Last Write Wins, CRDTs, vector clocks for data reconciliation.
+
+
+𝟳. 𝗥𝗲𝗹𝗶𝗮𝗯𝗶𝗹𝗶𝘁𝘆 𝗮𝗻𝗱 𝗙𝗮𝗶𝗹𝗼𝘃𝗲𝗿
+
+• Redundancy: Active-passive vs. active-active configurations.
+• Health Checks.
+• Retries and Circuit Breakers: How to protect systems from cascading failures.
+
+
+𝟴. 𝗖𝗗𝗡𝘀 (𝗖𝗼𝗻𝘁𝗲𝗻𝘁 𝗗𝗲𝗹𝗶𝘃𝗲𝗿𝘆 𝗡𝗲𝘁𝘄𝗼𝗿𝗸𝘀)
+
+• Static Content Delivery: Why use a CDN, how does it work?
+• Caching at the Edge: How CDNs improve latency for end users.
+
+
+𝟵. 𝗔𝗣𝗜 𝗗𝗲𝘀𝗶𝗴𝗻 𝗮𝗻𝗱 𝗥𝗮𝘁𝗲 𝗠𝗮𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁
+
+• REST vs. GraphQL: Difference and practical use-cases for each.
+• Pagination and Filtering: Strategies for efficiently fetching data.
+• API Versioning: Best practices for evolving APIs.
+• Throttle Requests: Why rate limiting is essential, algorithms like token bucket, leaky bucket.
+
+
+𝟭𝟬. 𝗦𝗲𝗮𝗿𝗰𝗵 𝗦𝘆𝘀𝘁𝗲𝗺𝘀
+
+• Indexing: Building and maintaining indexes for fast search.
+• Full-Text Search Engines: ElasticSearch, Azure AI Search.
+• Ranking and Relevance: Basic understanding of how scoring works.
+
+
+𝟭𝟭. 𝗠𝗼𝗻𝗶𝘁𝗼𝗿𝗶𝗻𝗴 𝗮𝗻𝗱 𝗢𝗯𝘀𝗲𝗿𝘃𝗮𝗯𝗶𝗹𝗶𝘁𝘆 𝗮𝗻𝗱 𝗦𝗲𝗰𝘂𝗿𝗶𝘁𝘆
+
+• Metrics Collection: Prometheus, Grafana.
+• Distributed Tracing: OpenTelemetry, Sentry.
+• Centralized Logging.
+• Authentication and Authorization: OAuth, JWT.
+• Encryption: Data in transit vs. data at rest.
