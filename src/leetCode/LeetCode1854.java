@@ -1,4 +1,4 @@
-package array;
+package leetCode;
 
 /**
  * Maximum population of the recent year

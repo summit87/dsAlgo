@@ -1,4 +1,4 @@
-package array;
+package leetCode;
 
 /**
  * Smallest sub array 
