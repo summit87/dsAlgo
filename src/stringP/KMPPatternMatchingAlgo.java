@@ -3,8 +3,8 @@ package stringP;
 public class KMPPatternMatchingAlgo {
 
     public static void main(String[] args) {
-        String pat = "def";
-        String str = "abcdefg";
+        String pat = "issip";
+        String str = "mississippi";
         System.out.println(isPatternMatchin(str, pat) );
     }
 
