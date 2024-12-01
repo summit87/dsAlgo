@@ -66,7 +66,6 @@ class Graph7 {
                 }
                 queue.add(node);
                 color[node] = (color[ver] == 'R' ? 'B' : 'R');
-                ch = (ch == 'R') ? 'B' : 'R';
             }
         }
         return true;
