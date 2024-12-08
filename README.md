@@ -202,3 +202,14 @@ Here is what you need to master.
 • Centralized Logging.
 • Authentication and Authorization: OAuth, JWT.
 • Encryption: Data in transit vs. data at rest.
+
+***
+### Below design must be implemented (All the desing should have concurency control) 
+* LRU/LFU cache implementation (Must)
+* Rate limiter
+    Try to implement all algoritham
+* Parking lot 
+* URL shortener services (Must)
+* Elevator system
+* Destributed scheduler (Must)
+***
