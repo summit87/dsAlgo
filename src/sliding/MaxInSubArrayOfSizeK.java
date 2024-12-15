@@ -6,11 +6,11 @@ import dp.LIS;
 
 public class MaxInSubArrayOfSizeK {
     public static void main(String[] args) {
-        int[] a = { 8, 5, 10, 7, 9, 4, 15, 12, 90, 13 };
-        // maxInSubArray(a, 4);
-        maxElementInKWindow(a, 4);
+        int[] a = { 9,10,9,-7,-4,-8,2,-6};
+         maxInSubArray(a, 5);
+        maxElementInKWindow(a, 5);
         System.out.println();
-         maxInSubArrayOfSizeK(a,4);
+         maxInSubArrayOfSizeK(a,5);
     }
 
     private static void maxInSubArray(int[] a, int k) {
