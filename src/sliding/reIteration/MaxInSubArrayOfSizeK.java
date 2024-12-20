@@ -18,17 +18,16 @@ public class MaxInSubArrayOfSizeK {
         int x = 0;
         Deque<Integer> deque = new LinkedList<>();
         for(int i=0;i<k;i++){
-            if(max < nums[i]){
-                max = nums[i];
-                index = i;
-            }
+           while(!deque.isEmpty() && nums[deque.peekLast()] < nums[i]){
+            deque.removeLast();
+           }
+           deque.addFirst(i);
         }
         
-        deque.addFirst(index);
-       result[x++] = nums[index];
+       result[x++] = nums[deque.peekLast()];
         for(int i = k; i < nums.length;i++){
-            while(!deque.isEmpty() && i - deque.getLast() >= k){
-                deque.removeLast();
+            while(!deque.isEmpty() && i - deque.peekFirst() >= k){
+                deque.removeFirst();
             }
 
             while(!deque.isEmpty() && nums[deque.getLast()] < nums[i] ){

@@ -26,8 +26,8 @@ import java.util.*;
 public class LeetCode395 {
 
     public static void main(String[] args) {
-        String str = "aaabb";
-        int k = 3;
+        String str = "weitong";
+        int k = 1;
         System.out.println(longestSubString(str, k));
     }
 
