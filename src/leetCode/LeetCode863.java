@@ -64,7 +64,9 @@ public class LeetCode863 {
         set.add(target.val);
         List<TreeNode> nodes = map.get(target.val);
         for(TreeNode tn1 : nodes){
+            if(!set.contains(tn1.val)){
             dfs2(tn1, l-1, list,set,map);
+            }
         }
     }
 
