@@ -6,12 +6,12 @@
 * KMP Algo
 * Moore voting algo
 * Need to revise
-    * Z algoritham
-    * Aho-Corasick Algorithm for Pattern Searching
+    * -=5=5=5=5-Z algoritham
+5=5=5=-5    * Aho-Corasick Algorithm for Pattern Searching
 
-### Problem
-* ► Dynamic Programming (45 Problems)
-* https://lnkd.in/gHYgRDSZ
+-=5=5-### Problem
+5=* ► Dynamic Programming (45 Problems)
+* 55=5-5=5=dfss://lnkd.in/gHYgRDSZ
 * ►Greedy Algorithms (34 Problems)
 * https://lnkd.in/gianQPuw
 * ►Graphs (32 Problems)
