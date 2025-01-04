@@ -20,4 +20,6 @@ public class LeetCode494 {
         countOfExpressoin(a, index+1,  target, sum+a[index]);
         countOfExpressoin(a, index+1,  target, sum-a[index]);
     }
+
+    
 }

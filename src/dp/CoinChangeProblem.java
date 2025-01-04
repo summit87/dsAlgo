@@ -6,8 +6,8 @@ import java.util.List;
 /** condition : We can select same coin more than one time */
 public class CoinChangeProblem {
   public static void main(String[] args) {
-    int[] coins = { 1, 2, 5, 7, 3, 6, 9 };
-    int sum = 10;
+    int[] coins = { 1, 2, 3};
+    int sum = 4;
     // System.out.println(coinChange(coins, sum, coins.length));
     // coinChangeUsingDP(coins,sum);
     coinChangeInON(sum, coins);

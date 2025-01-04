@@ -7,7 +7,7 @@ public class LeetCode930 {
     public static void main(String[] args) {
         int[] nums = {1,0,1,0,1};
         int goal = 2;
-          System.out.println(subArrayCount(nums, goal));
+          System.out.println(subArrayCount(nums, goal)-subArrayCount(nums, goal-1));
        // int count = findSubarrayCount(nums,goal);
         //System.out.println(count);
     }

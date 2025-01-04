@@ -6,8 +6,8 @@ import java.util.List;
 public class ArraySumSubset {
 
     public static void main(String[] args) {
-        int sum = 24;
-        int[] a = {12, 1, 61, 5, 9, 2};
+        int sum = 7;
+        int[] a = {2,3,6,7};
         List<List<Integer>> list = new ArrayList<>();
         List<Integer> l = new ArrayList<>();
         subSet(a, sum, list, l, 0);
