@@ -49,10 +49,10 @@ public class TrieNodeWithIndex {
 		TrieNodeWithIndex tni = trieNodeWithIndex;
 		for (int i = 0; i < word.length(); i++) {
 			int index = word.charAt(i) - 'a';
-			if (tni.getTrieNodeWithIndices()[i] == null) {
-				tni.getTrieNodeWithIndices()[i] = new TrieNodeWithIndex(word.charAt(i));
+			if (tni.getTrieNodeWithIndices()[index] == null) {
+				tni.getTrieNodeWithIndices()[index] = new TrieNodeWithIndex(word.charAt(i));
 			}
-			tni = tni.getTrieNodeWithIndices()[i];
+			tni = tni.getTrieNodeWithIndices()[index];
 		}
 		tni.setWord(true);
 	}

@@ -3,13 +3,13 @@ package bitwise;
 public class Bitwise1 {
 
     public static void main(String[] args) {
-        //  leftShift();
+         leftShift();
         //  rightShift();
         //System.out.println(isNumberPowerOf2(16));
         //System.out.println(checkIfIthBitSetOrNot(7,3));
         //System.out.println(extractLastBit(0));
        // bitwise1(5);
-       System.out.println(onesComplement(8));
+       //System.out.println(onesComplement(8));
     }
 
     public static void leftShift() {
@@ -68,10 +68,9 @@ public class Bitwise1 {
          * To check if ith bit for any given number is set , we need to peform
          * below steps , let say number is N
          *
-         * 1. Find another Number with expression 2^i , i.e 1 << i, let say that
-         * number id M 2. Then do X = M & N , the result number will have only
-         * ith bit set and rest is un-set 3. if all the bit are unset then the
-         * number does't have any bit set
+         * 1. Find another Number with expression 2^i , i.e 1 << i, let say that number id M 
+         * 2. Then do X = M & N , the result number will have only ith bit set and rest is un-set 
+         * 3. if all the bit are unset then the  number does't have any bit set
          */
 
         int x = 1 << ith;

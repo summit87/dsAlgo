@@ -8,19 +8,19 @@ public class LongestString {
 
   static String prev="";
   public static void main(String[] args) {
-    String[] strs = {"a", "banana", "app", "appl", "ap", "apply", "apple","appla"};
+    String[] strs = {"a", "banana", "app", "appl", "ap", "apply", "apple","applaoiuoigf"};
     TrieNode tn = new TrieNode();
     for (int i = 0; i < strs.length; i++) {
       tn.insertNode(tn, strs[i]);
     }
-   List<String> list = new ArrayList<>();
-   tn.print(tn,"",list);
-   for (String str : list){
-     System.out.println(str);
-   }
-    // String result = "";
-    // longestString(tn, result);
-    // System.out.println(prev);
+  //  List<String> list = new ArrayList<>();
+  //  tn.print(tn,"",list);
+  //  for (String str : list){
+  //    System.out.println(str);
+  //  }
+    String result = "";
+    longestString(tn, result);
+    System.out.println(prev);
   }
 
   //todo: Need to look into this again

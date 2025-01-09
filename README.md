@@ -213,3 +213,108 @@ Here is what you need to master.
 * Elevator system
 * Destributed scheduler (Must)
 ***
+
+
+I have spent 1 last year digging into these topics whole heartedly, I hope you find them useful.
+
+[1] Bloom Filters
+https://lnkd.in/g5VqJkfg
+
+[2] Count-Min Sketch
+https://lnkd.in/gQJ6kgaZ
+
+[3] B-Tree vs B+Tree
+https://lnkd.in/gQc4XZwt
+
+[4] A deep dive: What is an LSM tree?
+https://lnkd.in/gWGSdYPC
+
+[5] MySQL vs PostgreSQL : Indexing
+https://lnkd.in/gDi6AJSK
+
+[6] MySQL vs PostgreSQL : Replication
+https://lnkd.in/gdYApwcA
+
+[7] Sharding vs Partitioning
+https://lnkd.in/gHjg8d8p
+
+[8] How to implement Optimistic Locking?
+https://lnkd.in/dVAmF9JK
+
+[9] How to implement Consistent Hashing?
+https://lnkd.in/gVbNTH4F
+
+[10] How to find nearby entities using GeoHashing?
+https://lnkd.in/g_f49AWT
+
+[11] What are Quadtrees?
+https://lnkd.in/getWWUNk
+
+[12] Message Queues vs Message Brokers
+https://lnkd.in/g_GYVaBY
+
+[13] Kafka Basics
+https://lnkd.in/gxXkDtbu
+
+[14] What makes Kafka so fast and efficient?
+https://lnkd.in/gJGW8w4y
+
+[15] Sequential I/O vs Random I/O
+https://lnkd.in/gSccRSec
+
+[16] What is a Content Delivery Network?
+https://lnkd.in/gYhDQSA7
+
+– SOLID - https://lnkd.in/gXJ_JAPX
+– ACID - https://lnkd.in/gk98CBGw
+– YAGNI - https://lnkd.in/grAd8zdP
+– KISS - https://lnkd.in/gHm-y8HM
+– DRY - https://lnkd.in/guu9XBq6
+– Design Patterns - https://lnkd.in/ghW-VYsi
+– Separation Of Concerns - https://lnkd.in/ghjd75Rk
+– Modularity - https://lnkd.in/gwhd-K97
+
+► System Design Fundamentals
+
+- Scalability: https://lnkd.in/gpge_z76 
+- Latency vs Throughput: https://lnkd.in/g_amhAtN
+- CAP Theorem: https://lnkd.in/g3hmVamx
+- ACID Transactions: https://lnkd.in/gMe2JqaF
+- Consistent Hashing: https://lnkd.in/gd3eAQKA
+- Rate Limiting: https://lnkd.in/gWsTDR3m
+- API Design: https://lnkd.in/ghYzrr8q
+- Strong vs Eventual Consistency: https://lnkd.in/gJ-uXQXZ
+- Synchronous vs. asynchronous communications: https://lnkd.in/gC3F2nvr
+- REST vs RPC: https://lnkd.in/gN__zcAB
+- Batch Processing vs Stream Processing: https://lnkd.in/g4_MzM4s
+- Fault Tolerance: https://lnkd.in/dVJ6n3wA
+- Consensus Algorithms: https://lnkd.in/ggc3tFbr
+- Gossip Protocol: https://lnkd.in/gfPMtrJZ
+- Service Discovery: https://lnkd.in/gjnrYkyF
+- Disaster Recovery: https://lnkd.in/g8rnr3V3
+- Distributed Tracing: https://lnkd.in/d6r5RdXG
+- Top 15 Tradeoffs: https://lnkd.in/gnM8QC-z
+- Horizontal vs Vertical Scaling: https://lnkd.in/gAH2e9du
+- Databases: https://lnkd.in/gti8gjpz
+- Content Delivery Network (CDN): https://lnkd.in/gjJrEJeH
+- Domain Name System (DNS): https://lnkd.in/gkMcZW8V
+- Caching: https://lnkd.in/gC9piQbJ
+- Distributed Caching: https://lnkd.in/g7WKydNg
+- Load Balancing: https://lnkd.in/gQaa8sXK
+- SQL vs NoSQL: https://lnkd.in/g3WC_yxn
+- Database Indexs: https://lnkd.in/gCeshYVt
+- HeartBeat: https://lnkd.in/g4x7sMrF
+- Circuit Breaker: https://lnkd.in/gCxyFzKm
+- Idempotency: https://lnkd.in/gPm6EtKJ
+- Database Scaling: https://lnkd.in/gAXpSyWQ
+- Data Replication: https://lnkd.in/gVAJxTpS
+- Data Redundancy: https://lnkd.in/gNN7TF7n
+- Database Sharding: https://lnkd.in/gMqqc6x9
+- Failover: https://lnkd.in/dihZ-cEG
+- Proxy Server: https://lnkd.in/gi8KnKS6
+- Message Queues: https://lnkd.in/gTzY6uk8
+- WebSockets: https://lnkd.in/g76Gv2KQ
+- Bloom Filters: https://lnkd.in/dt4QbSUz
+- API Gateway: https://lnkd.in/gnsJGJaM
+- Distributed Locking: https://lnkd.in/gRxNJwWE
+- Checksum: https://lnkd.in/ghNc5pfn

@@ -25,14 +25,13 @@ import javax.naming.LinkException;
 public class LeetCode692 {
 
     public static void main(String[] args) {
-        String[] st = {"the","day","is","sunny","the","the","the","sunny","is","is"};
-        int k = 4;
+        String[] st = {"i","love","leetcode","i","love","coding"};
+        int k = 1;
 
-        // for (String s : topKFrequentString(st, k)) {
-        //     System.out.print(s + ",");
-        // }
+        for (String s : topKFrequentString(st, k)) {
+            System.out.print(s + ",");
+        }
 
-        System.out.println(('9'-0));
     }
 
     private static List<String> topKFrequentString(String[] strings, int k) {
@@ -53,8 +52,7 @@ public class LeetCode692 {
                     @Override
                     public int compare(Map.Entry<String, Integer> a, Map.Entry<String, Integer> b) {
                         if (a.getValue().compareTo(b.getValue()) == 0) {
-                            System.out.println(b.getKey()+" : "+a.getKey());
-                           return -1;
+                           return a.getKey().compareTo(b.getKey());
                         }
                         return a.getValue().compareTo(b.getValue());
                     }
@@ -67,7 +65,7 @@ public class LeetCode692 {
             visitedString.add(m1.getKey());
             pq.add(m1);
             if (pq.size() > k) {
-                pq.poll();
+               System.out.println( pq.poll());
             }
         }
 
