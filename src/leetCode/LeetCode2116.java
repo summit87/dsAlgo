@@ -1,10 +1,12 @@
 package leetCode;
 
+import java.util.Stack;
+
 public class LeetCode2116 {
     public static void main(String[] args) {
-        String str="))())(";
-        String locked = "010101";
-        System.out.println(isValidParenthesis(str, locked));
+        String str="))()))";
+        String locked = "010100";
+        System.out.println(isVailidParenthesis(str, locked));
     }
 
     public static boolean isValidParenthesis(String str, String locked) {
@@ -74,6 +76,39 @@ public class LeetCode2116 {
             return false;
         }
 
+        return true;
+    }
+
+
+
+    public static boolean isVailidParenthesis(String str,String locked){
+        Stack<Integer> unLocked = new Stack<>();
+        Stack<Integer> lockedStack = new Stack<>();
+        for(int i=0;i<str.length();i++){
+            if(locked.charAt(i) == '0'){
+                unLocked.push(i);
+            }else if(str.charAt(i) == '('){
+                lockedStack.push(i);
+            }else {
+                if(str.charAt(i) == ')'){
+                    if(!lockedStack.isEmpty() && lockedStack.peek() < i){
+                        lockedStack.pop();
+                    }else if(!unLocked.isEmpty()){
+                        unLocked.pop();
+                    }else{
+                        return false;
+                    }
+                }
+            }
+        }
+
+        while(!unLocked.isEmpty() && !lockedStack.isEmpty()){
+            if(lockedStack.peek() > unLocked.peek()){
+                return false;
+            }
+            lockedStack.pop();
+            unLocked.pop();
+        }
         return true;
     }
 }

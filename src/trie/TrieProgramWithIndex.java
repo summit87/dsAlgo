@@ -14,6 +14,8 @@ public class TrieProgramWithIndex {
             autoSuggestion(word.substring(0, i+1), res, trieNodeWithIndex, new StringBuilder(), op);
             if(op.size() > 3){
                 res.add(op.subList(0, 3));
+            }else if(!op.isEmpty()){
+                res.add(op);
             }
         }
        // System.out.println(trieNodeWithIndex.findWord("cats", trieNodeWithIndex));
@@ -24,14 +26,14 @@ public class TrieProgramWithIndex {
         if (trieNodeWithIndex == null) {
             return;
         }
-        if(trieNodeWithIndex != null && trieNodeWithIndex.isWord() && word.toString().trim().contains(prefix)){
+        if(trieNodeWithIndex != null && trieNodeWithIndex.isWord() && word.length() >= prefix.length()&& word.subSequence(0, prefix.length()).equals(prefix)){
             list.add(word.toString().trim());
             return;
         }
         for(int i=0;i<26;i++){
             trieNodeWithIndex = trieNodeWithIndex.getTrieNodeWithIndices()[i];
             int len = word.toString().length();
-            word.append(trieNodeWithIndex.getCharacter());
+            word.append(trieNodeWithIndex != null ? trieNodeWithIndex.getCharacter() : "");
             autoSuggestion(prefix, res,  trieNodeWithIndex.getTrieNodeWithIndices()[i], word, list);
             word.setLength(len);
         }
