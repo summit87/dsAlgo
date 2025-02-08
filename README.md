@@ -319,6 +319,43 @@ https://lnkd.in/gYhDQSA7
 - Distributed Locking: https://lnkd.in/gRxNJwWE
 - Checksum: https://lnkd.in/ghNc5pfn
 
+
+### Diff blog
+
+30 Blogs to Learn 30 System Design Concepts:
+
+
+- [ ] APIs: https://lnkd.in/dsbwPZ6N
+- [ ] API Gateway: https://lnkd.in/gtyXmvf4
+- [ ] Scalability: https://lnkd.in/gPGhW-qK
+- [ ] Availability: https://lnkd.in/gQk2p4_6
+- [ ] CAP Theorem: https://lnkd.in/g_tFqJJb
+- [ ] Load Balancers: https://lnkd.in/dzM7VDKq
+- [ ] Load Balancing Algorithms: https://lnkd.in/gvxfwEUr
+- [ ] Caching: https://lnkd.in/gBSeTstS
+- [ ] Caching Strategies: https://lnkd.in/dVk7nZ_Y
+- [ ] Cache Eviction Strategies: https://lnkd.in/gQAEXEmq
+- [ ] Distributed Caching: https://lnkd.in/gf6pCqdi
+- [ ] CDNs: https://lnkd.in/g2zvPhkA
+- [ ] Database Types: https://lnkd.in/gDxtZVE2
+- [ ] SQL vs NoSQL: https://lnkd.in/gHyC9qWc
+- [ ] ACID Transactions: https://lnkd.in/dB3QHiMz
+- [ ] Database Indexes: https://lnkd.in/g_-bQWtA
+- [ ] Database Sharding: https://lnkd.in/g9mc-d5m
+- [ ] Database Scaling: https://lnkd.in/gSUtAwc7
+- [ ] WebSockets: https://lnkd.in/gD-TUZep
+- [ ] Message Queues: https://lnkd.in/g-jnNGDC
+- [ ] Service Discovery: https://lnkd.in/gRj_QeP8
+- [ ] Bloom Filters: https://lnkd.in/gfGjCrSZ
+- [ ] Rate Limiting Algorithms: https://lnkd.in/gYDxg8XY
+- [ ] SPOF: https://lnkd.in/gw_uHZWn
+- [ ] Idempotency: https://lnkd.in/gDB3AJij
+- [ ] Checksums: https://lnkd.in/gGPEKV8b
+- [ ] Long Polling vs WebSockets: https://lnkd.in/d9xKD28K
+- [ ] Concurrency vs Parallelism: https://lnkd.in/gGZXhjBD
+- [ ] Proxy vs Reverse Proxy: https://lnkd.in/gMTtidBq
+- [ ] Batch vs Stream Processing: https://lnkd.in/gKtj 
+
 ### DP
 
 1. https://lnkd.in/dpHdnbJg
