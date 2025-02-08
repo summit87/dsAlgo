@@ -276,8 +276,8 @@ https://lnkd.in/gYhDQSA7
 
 ► System Design Fundamentals
 
-- Scalability: https://lnkd.in/gpge_z76 
-- Latency vs Throughput: https://lnkd.in/g_amhAtN
+- [x] Scalability: https://lnkd.in/gpge_z76 
+- [ ] Latency vs Throughput: https://lnkd.in/g_amhAtN
 - CAP Theorem: https://lnkd.in/g3hmVamx
 - ACID Transactions: https://lnkd.in/gMe2JqaF
 - Consistent Hashing: https://lnkd.in/gd3eAQKA
