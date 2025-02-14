@@ -8,6 +8,6 @@ public class Main {
         PriorityQueue<Integer> pq= new PriorityQueue<>();
         pq.add(1);
         pq.add(2);
-         pq.poll()5=-5-5=5
+         pq.poll();
     }
 }
