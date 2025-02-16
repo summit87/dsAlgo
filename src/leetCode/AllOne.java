@@ -34,6 +34,7 @@ class AllOnes{
     Map<String,Node> map;
     public AllOnes(){
         map = new HashMap<>();
+        
     }
 
    
@@ -54,52 +55,8 @@ class AllOnes{
          * 
          */
 
-         if(map.containsKey(key)){
-            Node node = map.get(key);
-            if(node == head){
-                Node newNode  = new Node(head.count+1);
-                head.set.remove(key);
-                newNode.set.add(key);
-                newNode.prev = head;
-                newNode.next=null;
-                head.next=newNode;
-                head = newNode;
-                map.put(key, newNode);
-                return;
-            }
-            if(node == tail){
-                tail.set.remove(key);
-                tail.next.set.add(key);
-                Node temp = tail.next;
-                if(tail.set.isEmpty()){
-                    tail = temp;
-                }
-                map.put(key,temp);
-                return;
-            }
-            node.set.remove(key);
-            node.next.set.add(key);
-            map.put(key,node.next);
-         }else{
-            if(head == null){
-                Node node = new Node(1);
-                node.set.add(key);
-                head = node;
-                tail = node;
-                map.put(key,head);
-                return;
-            }
-            Node node = new Node(1);
-            if(tail.count == 1){
-                tail.set.add(key);
-                map.put(key, tail);
-                return;
-            }          
-            node.next = tail;
-            node.prev = null;
-            tail = node;
-            map.put(key, node); 
-         }
+        
+         
     }
 
     public  void dec(String key) {
@@ -115,45 +72,6 @@ class AllOnes{
             remove the key from curernt node seet and add it into prevous node
         */
 
-        if(!map.containsKey(key) ){
-            return;
-        }
-        Node node = map.get(key);
-        if(node == tail){
-            
-            if(tail.count == 1){
-                tail.set.remove(key);
-                if(tail.set.isEmpty())
-                    tail = tail.next;
-                map.remove(key);
-                return;
-            }
-            tail.set.remove(key);
-            Node newNode = new Node(tail.count-1);
-            newNode.set.add(key);
-            newNode.next = tail;
-            tail.prev = node;
-            tail = newNode;
-            map.put(key, newNode);
-            return;
-        }
-        if(node == head){
-            if(head.count == 1){
-                head.set.remove(key);
-                if(head.set.isEmpty()){
-                    head = head.prev;
-                }
-                map.remove(key);
-                return;
-            }
-            Node pNode = head.prev;
-            head.set.remove(key);
-            pNode.set.add(key);
-            map.put(key, pNode);
-            return;
-        }
-        node.prev.set.remove(key);
-        map.put(key, node.prev);
     }
 
     public  String getMaxKey() {

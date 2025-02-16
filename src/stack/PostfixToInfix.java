@@ -25,7 +25,7 @@ public class PostfixToInfix {
         int operatorCount = 0;
         int operandCount = 0;
         Stack<String> stack = new Stack<>();
-        String input = "ab*c*d+";
+        String input = "abc-+";
         for (int i = 0; i < input.length(); i++) {
             char ch = input.charAt(i);
             if (!isOperator(ch)) {
