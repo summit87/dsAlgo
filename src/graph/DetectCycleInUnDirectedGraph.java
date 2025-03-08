@@ -1,4 +1,4 @@
-
+package graph;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
@@ -9,8 +9,9 @@ public class DetectCycleInUnDirectedGraph {
      * @throws FileNotFoundException
      */
     public static void main(String[] args) throws FileNotFoundException {
-        Graph4 graph4 = new Graph4("g4.txt");        
-        System.out.println(graph4.isCycle(0));
+        // Graph4 graph4 = new Graph4("g4.txt");        
+        // System.out.println(graph4.isCycle(0));
+        System.out.println(('z'-97));
     }
 }
 
