@@ -1,8 +1,11 @@
 package leetCode;
 public class LeetCode547 {
     public static void main(String[] args) {
-        int[][] isConnected = {{1,0},{1,1}};
-        System.out.println(findNebhours(isConnected));
+        // int[][] isConnected = {{1,0},{1,1}};
+        // System.out.println(findNebhours(isConnected));
+        String s="hot";
+        String s1  = "dot";
+       
     }
 
     public static int findNebhours(int[][] isConnected){
@@ -49,5 +52,4 @@ public class LeetCode547 {
         }
         return 1;
     }
-
 }
