@@ -2,7 +2,7 @@ package binarySearch;
 
 public class Pivot1 {
     public static void main(String[] args) {
-        int[] nums = {4,5,6,7,8,9,0};
+        int[] nums = {4,5,6,2,3};
         System.out.println(findPivot(nums, 0, nums.length-1));
     }
 
@@ -17,7 +17,7 @@ public class Pivot1 {
         }
 
         if(mid - 1>= 0 && nums[mid] < nums[mid-1]){
-            return mid-1;
+            return mid;
         }
 
         if(nums[mid] > nums[left]){

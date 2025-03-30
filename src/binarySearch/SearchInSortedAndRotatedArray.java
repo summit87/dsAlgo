@@ -2,10 +2,10 @@ package binarySearch;
 
 public class SearchInSortedAndRotatedArray {
     public static void main(String[] args) {
-        int[] a = { 4, 5, 6, 7, 0, 1, 2 };
+        int[] a = { 2,3,4,5,6,7,8,9,1 };
 
-        System.out.println(search(a, 0));
-        System.out.println(searchInSorted(a, 5, 0, a.length-1));
+        System.out.println(search(a, 9));
+        System.out.println(searchInSorted(a, 9, 0, a.length-1));
     }
 
     private static int searchInSorted(int[] a, int key, int left, int right) {

@@ -13,12 +13,14 @@ public class Main {
        List<String> list = new ArrayList<>();
        print(map, "hit", "cog","hit",list);
        System.out.println();
+       
 
     }
 
     public static void print(Map<String,String> map,String begin,String end,String s,List<String> list){
         if(map.containsKey(begin) && map.get(begin).equals(s)){
            list.add(map.get(begin));
+           
             return;
         }
         list.add(map.get(end));
