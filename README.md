@@ -391,6 +391,7 @@ https://lnkd.in/gYhDQSA7
 31. https://lnkd.in/euYg-hyv
 
 
+
 ### Company Engineering blog
 ----
 1. Engineering at Meta - [https://lnkd.in/e8tiSkEv](https://lnkd.in/e8tiSkEv)  
@@ -426,3 +427,51 @@ https://lnkd.in/gYhDQSA7
 31. Swiggy - [https://bytes.swiggy.com/](https://bytes.swiggy.com/)  
 32. Shopify Engineering - [https://lnkd.in/evvnqQTj](https://lnkd.in/evvnqQTj)  
 33. Microsoft Tech Blogs - [https://lnkd.in/etw_7_bN](https://lnkd.in/etw_7_bN)
+
+### Tech Paper
+---
+
+0. Dynamo - Amazon’s Highly Available Key-value Store: https://lnkd.in/dWxQ_ZXd
+
+1. MapReduce - Simplified Data Processing on Large Clusters:
+https://lnkd.in/dh2qmyvb
+
+2. Scaling Memcache at Facebook: https://lnkd.in/dftNTe4K
+
+3. GFS - The Google File System: https://lnkd.in/ds2JNE6h
+
+4. Kafka - a Distributed Messaging System for Log Processing: https://lnkd.in/dHpDXPAK
+
+5. Consistent Hashing and Random Trees: https://lnkd.in/dDGdQ7Cx
+
+6. Bigtable - A Distributed Storage System for Structured Data:
+https://lnkd.in/dTrK6X6B
+
+7. Cassandra - A Decentralized Structured Storage System: https://lnkd.in/dc5e5n33
+
+8. Spanner - Google’s Globally-Distributed Database:
+https://lnkd.in/dEnHJTcc
+
+9. Bitcoin - A Peer-to-Peer Electronic Cash System: https://lnkd.in/dvepw24m
+
+10. ZooKeeper - Wait-free coordination for Internet-scale systems: https://lnkd.in/dwkwWmbY
+
+11. XFaaS - Hyperscale and Low Cost Serverless Functions at Meta: https://lnkd.in/dCRYi7Qq
+
+12. Perspectives on the CAP Theorem: https://lnkd.in/dMRPv_kp
+
+13. LSM-Tree - The Log-Structured Merge-Tree: https://lnkd.in/dqFcshhD
+
+14. Google's Chubby lock service for loosely-coupled distributed systems: https://lnkd.in/dr4Dai88
+
+15. Tiktok Monolith - Real-Time Recommendation System With Collisionless Embedding Table: https://lnkd.in/dVjTywaG
+
+16. Apple's FoundationDB - 
+A Distributed Unbundled Transactional Key Value Store: https://lnkd.in/dCsWjv2D
+
+17. TAO - Facebook’s Distributed Data Store for the Social Graph https://lnkd.in/dkyM7ZMj
+
+18. Zanzibar - 
+Google’s Consistent, Global Authorization System: https://lnkd.in/d4zDa5cc 
+
+19. Google - Attention Is All You Need: https://lnkd.in/dGy8GRJq
