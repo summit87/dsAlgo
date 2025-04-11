@@ -2,8 +2,9 @@ package binarySearch;
 
 public class Pivot1 {
     public static void main(String[] args) {
-        int[] nums = {4,5,6,2,3};
-        System.out.println(findPivot(nums, 0, nums.length-1));
+        int[] nums = {1,2,3,4,5};
+        System.out.println(2 >> 9);
+      //  System.out.println(findPivot(nums, 0, nums.length-1));
     }
 
 

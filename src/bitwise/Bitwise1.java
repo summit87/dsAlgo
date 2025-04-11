@@ -4,7 +4,7 @@ public class Bitwise1 {
 
     public static void main(String[] args) {
          leftShift();
-        //  rightShift();
+        rightShift();
         //System.out.println(isNumberPowerOf2(16));
         //System.out.println(checkIfIthBitSetOrNot(7,3));
         //System.out.println(extractLastBit(0));
@@ -37,7 +37,7 @@ public class Bitwise1 {
          * to the right n, n >> k
          */
 
-        System.out.println((6 >> 2));
+        System.out.println((9 >> 1));
     }
 
     /**

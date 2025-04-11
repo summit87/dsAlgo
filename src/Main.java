@@ -13,6 +13,8 @@ public class Main {
        List<String> list = new ArrayList<>();
        print(map, "hit", "cog","hit",list);
        System.out.println();
+       List<List<Integer>> l = new ArrayList<>();
+       
        
 
     }

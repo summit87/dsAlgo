@@ -22,7 +22,7 @@ public class AverageOfSubTree {
             int totalChild = child+pl.getChildCount()+pr.getChildCount();
             int count = pl.getCount()+pr.getCount();
             if(sum/totalChild == tn.getData()){
-                count = count+1;
+                count = count+1;A
             }
             return new PairNode(totalChild, sum,count);
         }
