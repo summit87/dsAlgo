@@ -14,6 +14,7 @@ public class Main {
        print(map, "hit", "cog","hit",list);
        System.out.println();
        List<List<Integer>> l = new ArrayList<>();
+      double f =  Double.MAX_VALUE;
        
        
 

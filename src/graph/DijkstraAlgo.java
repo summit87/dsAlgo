@@ -10,7 +10,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
-import java.util.Queue;
 import java.util.Scanner;
 import java.util.Set;
 
@@ -50,8 +49,8 @@ class DijGraphStructure {
       path[i] = -1;
     }
     dist[src] = 0;
-    Queue<NodeVal> queue = new LinkedList<>();
-    queue.add(new NodeVal(0, 0));
+    PriorityQueue<NodeVal> queue = new PriorityQueue<>();
+    queue.add(new NodeVal(src, 0));
     path[0] = -1;
     while (!queue.isEmpty()) {
       NodeVal v = queue.poll();
