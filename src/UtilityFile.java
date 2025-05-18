@@ -16,6 +16,10 @@ public class UtilityFile {
      * @return
      */
      public static int count(int[][] prefix){
+        /**
+         * Sort pq in reverseorder using comparator
+         * PriorityQueue<Integer> queue = new PriorityQueue<>(10, Collections.reverseOrder());
+         */
         int count = 1;
         List<int[]> prefixList = new ArrayList<>();
         for(int i=0;i<prefix.length;i++){
