@@ -517,3 +517,16 @@ Google’s Consistent, Global Authorization System: https://lnkd.in/d4zDa5cc
 35. LLD of Apply Coupon code system
 36. LLD of Payment Gateway System
 37. Object Pool Design Pattern
+
+System Design: Top K Heavy Hits
+Use cases:
+1. Top K Youtube Videos
+2. Top K Spotify Songs
+3. Top K LeaderBoard
+
+Ever wondered how this is designed?
+Here's a curated list of articles that would help you understand.
+1. https://lnkd.in/g4AAebsu
+2. https://lnkd.in/g5M3vjJz
+3. https://lnkd.in/geT3K4mD
+4. https://lnkd.in/gA-zvGnK

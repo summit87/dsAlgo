@@ -5,7 +5,9 @@ import java.util.List;
 
 public class UtilityFile {
     public static void main(String[] args) {
-        
+       int val =  31;
+        System.out.println(31/4);
+        System.out.println(31%4);
     }
 
 
@@ -20,6 +22,7 @@ public class UtilityFile {
          * Sort pq in reverseorder using comparator
          * PriorityQueue<Integer> queue = new PriorityQueue<>(10, Collections.reverseOrder());
          */
+       
         int count = 1;
         List<int[]> prefixList = new ArrayList<>();
         for(int i=0;i<prefix.length;i++){

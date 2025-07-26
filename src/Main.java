@@ -12,9 +12,15 @@ public class Main {
        map.put("cog","log");
        List<String> list = new ArrayList<>();
        print(map, "hit", "cog","hit",list);
-       System.out.println();
+       System.out.println(list);
        List<List<Integer>> l = new ArrayList<>();
       double f =  Double.MAX_VALUE;
+
+      SortedMap<Integer,String> treeMap = new TreeMap<>();
+      treeMap.put(1, "12");
+      treeMap.put(8, "123");
+     System.out.println(treeMap.containsKey(3));
+
        
        
 
