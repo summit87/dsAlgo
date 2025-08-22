@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.PriorityQueue;
 
 public class UtilityFile {
     public static void main(String[] args) {
@@ -22,6 +23,8 @@ public class UtilityFile {
          * Sort pq in reverseorder using comparator
          * PriorityQueue<Integer> queue = new PriorityQueue<>(10, Collections.reverseOrder());
          */
+        int[][] a1 = new int[2][2];
+         PriorityQueue<int[]> pq = new PriorityQueue<>((a,b) -> Integer.compare(a[0], b[0]));
        
         int count = 1;
         List<int[]> prefixList = new ArrayList<>();

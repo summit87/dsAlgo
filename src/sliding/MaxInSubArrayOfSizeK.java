@@ -56,6 +56,7 @@ public class MaxInSubArrayOfSizeK {
             }
             deque.addLast(i);
         }
+        // { 9,10,9,-7,-4,-8,2,-6};
         for (int i = k; i < a.length; i++) {
             System.out.print(a[deque.peekFirst()] + ",");
 
