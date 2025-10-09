@@ -5,7 +5,7 @@ import java.util.Stack;
 public class LeetCode394 {
     public static void main(String[] args) {
 
-        String s = "300[ab]";
+        String s = "300[ab2[c5[s]]]1[zx]";
 
 
         Stack<String> st = new Stack<>();
