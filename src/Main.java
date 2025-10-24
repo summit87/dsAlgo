@@ -16,12 +16,10 @@ public class Main {
        List<List<Integer>> l = new ArrayList<>();
       double f =  Double.MAX_VALUE;
 
-      SortedMap<Integer,String> treeMap = new TreeMap<>();
-      treeMap.put(1, "12");
-      treeMap.put(8, "123");
-     System.out.println(treeMap.containsKey(3));
+      System.out.println((char)(2+'a'));
 
        
+      
        
 
     }

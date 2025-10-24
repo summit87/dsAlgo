@@ -11,6 +11,8 @@ public class TreeNode {
 
     public TreeNode(Integer data) {
         this.data = data;
+        this.left = null;
+        this.right = null;
     }
 
     public Integer getData() {
@@ -224,6 +226,20 @@ public class TreeNode {
         tn.setLeft(new TreeNode(75));
         tn.getLeft().setLeft(new TreeNode(45));
         tn.setRight(new TreeNode(45));
+        return tn;
+    }
+
+
+     public static TreeNode createTree3(){
+        TreeNode tn = new TreeNode(5);
+        tn.setLeft(new TreeNode(4));
+        tn.getLeft().setLeft(new TreeNode(11));
+        tn.getLeft().getLeft().setLeft(new TreeNode(7));
+        tn.getLeft().getLeft().setRight(new TreeNode(2));
+        tn.setRight(new TreeNode(8));
+        tn.getRight().setLeft(new TreeNode(13));
+        tn.getRight().setRight(new TreeNode(4));
+        tn.getRight().getRight().setRight(new TreeNode(1));
         return tn;
     }
 
