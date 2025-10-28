@@ -1,9 +1,46 @@
 package leetCode;
 
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
 public class LeetCode128 {
     public static void main(String[] args) {
         int[] num = {0,3,7,2,5,8,4,6,0,1};
-        System.out.println(longestConsecutive(num));
+        System.out.println(longestConsecutiveSeq(num));
+    }
+
+
+    public static int longestConsecutiveSeq(int[] a){
+        int cnt = Integer.MIN_VALUE;
+        Map<Integer,Integer> map = new HashMap<>();
+        for(int i=0;i<a.length;i++){
+            int cnt1 = 1;
+            if(map.containsKey(a[i])){
+                cnt1+=map.get(a[i]);
+            }
+            map.put(a[i], cnt1);
+        }
+        Set<Integer> visited = new HashSet<>();
+        for(int i=0;i<a.length;i++){
+            int num = a[i];
+            int val = 0;
+            while(map.containsKey(num)){
+                if(visited.contains(num)){
+                    val+=map.get(num);
+                    break;
+                }
+                visited.add(num);
+                val+=map.get(num);
+                num++;
+            }
+
+            cnt = Math.max(cnt, val);
+            
+        }
+
+        return cnt;
     }
 
     public static int longestConsecutive(int[] nums) {
