@@ -41,9 +41,9 @@ public class LeetCode1751 {
         int endTime = event[pickedLen][1];
         int left = len;
         int right = event.length;
-        while(len < right){
-            int mid = len+((right-left)/2);
-            if(event[mid][0]<endTime){
+        while(left < right){
+            int mid = left+((right-left)/2);
+            if(event[mid][0]<=endTime){
                 left = mid+1;
             }else{
                 right = mid;
