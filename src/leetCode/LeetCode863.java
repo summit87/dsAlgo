@@ -177,6 +177,30 @@ class TreeNode {
         tree.right.right = new TreeNode(8);
         return tree;
     }
+
+    public static TreeNode createNode1(){
+        TreeNode tn1 = new TreeNode(1);
+        tn1.left = new TreeNode(2);
+        tn1.left.left = null;
+        tn1.left.right = null;
+        tn1.right = new TreeNode(3);
+        tn1.right.left = new TreeNode(4);
+        tn1.right.left.left = null;
+        tn1.right.left.right = null;
+        tn1.right.right = new TreeNode(5);
+        tn1.right.right.left = null;
+        tn1.right.right.right = null;
+        return tn1;
+    }
+
+     public static TreeNode createNode2(){
+        TreeNode tn1 = new TreeNode(4);
+        tn1.left = new TreeNode(2);
+        tn1.right = new TreeNode(5);
+        tn1.left.left = new TreeNode(1);
+        tn1.left.right = new TreeNode(3);
+        return tn1;
+    }
 }
 
 

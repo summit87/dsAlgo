@@ -36,6 +36,6 @@ public class ValidParenthesis {
         return false;
       }
     }
-    return count == 0 && !s.isEmpty();
+    return count == 0 ;
   }
 }

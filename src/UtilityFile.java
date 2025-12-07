@@ -1,14 +1,48 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.PriorityQueue;
 
 public class UtilityFile {
     public static void main(String[] args) {
-       int val =  31;
-        System.out.println(31/4);
-        System.out.println(31%4);
+    //    int val =  31;
+    //     System.out.println(31/4);
+    //     System.out.println(31%4);
+        
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(0, 1);
+        list.remove(list.size()-1);
+        list.add(0, 2);
+        System.out.println(list.iterator().next());
+
+        // Sort the HashMap by value;
+        int[] a = new int[]{1,2,3,4,1,3,2,5,5};
+        Comparator<Map.Entry<Integer,Integer>> c = (a1,b) -> a1.getValue() - b.getValue(); // sort the map by value
+        Comparator<Map.Entry<Integer,Integer>> c1 = (a1,b) -> {
+            if(a1.getValue().compareTo(b.getValue()) == 0){
+                if(a1.getKey().compareTo(b.getKey()) > 0){
+                    return -1; // return the value in accending order
+                }
+                return 1;
+            }
+            return a1.getValue() - b.getValue();
+        }; // sort the map by value
+        Map<Integer,Integer> map = new HashMap<>();
+        for(int x : a){
+            map.put(x, map.getOrDefault(x, 0)+1);
+        }
+        List<Map.Entry<Integer,Integer>> list1 = new ArrayList<>(map.entrySet());
+        Collections.sort(list1,c1);
+        for(Map.Entry<Integer,Integer> m : list1){
+            System.out.println(m.getKey()+" : "+m.getValue());
+        }
+
+        
+
     }
 
 
