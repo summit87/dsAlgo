@@ -2,8 +2,9 @@ package sorting;
 
 public class InversionOfControl {
     public static void main(String[] args) {
-        int[] a = {6, 3, 7, 2};
+        int[] a = {5,3,2,1};
         System.out.println(inversionOfControl(a,0,a.length-1));
+        System.out.println(inversionOfControll(a));
     }
 
     public static int inversionOfControll(int[] a){
@@ -59,7 +60,7 @@ public class InversionOfControl {
                 /**
                  * How : https://www.youtube.com/watch?v=AseUmwVNaoY
                  */
-                count+=(m+1)-(l+i1);
+                count+= (m-i1+1);
             }
             k++;
         }
