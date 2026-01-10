@@ -3,13 +3,14 @@ package bitwise;
 public class Bitwise1 {
 
     public static void main(String[] args) {
-         leftShift();
+        leftShift();
         rightShift();
-        //System.out.println(isNumberPowerOf2(16));
-        //System.out.println(checkIfIthBitSetOrNot(7,3));
-        //System.out.println(extractLastBit(0));
-       // bitwise1(5);
-       //System.out.println(onesComplement(8));
+        // System.out.println(isNumberPowerOf2(16));
+        // System.out.println(checkIfIthBitSetOrNot(7,3));
+        // System.out.println(extractLastBit(0));
+        // bitwise1(5);
+        // System.out.println(onesComplement(8));
+        System.out.println(setIthBit(4, 0));
     }
 
     public static void leftShift() {
@@ -32,7 +33,7 @@ public class Bitwise1 {
          * 2^k K : which represent number bit we are shifting to the right for
          * give number
          *
-         * e.g we are shifting 2 bit of the right of number 5 5 / 2^2 : 1
+         * e.g we are shifting 2 bit of the right of number 5 , then 5 / 2^2 : 1
          * representation purpose , if we wanted to do k shift for give number n
          * to the right n, n >> k
          */
@@ -57,7 +58,7 @@ public class Bitwise1 {
          * AND DO , X = N-1 * 2. THEN DO THE (N & X) , * IF ANY NUMBER IS POWER
          * OF TWO THEN ONLY ONE BIT WILL BE SET * IF NUMBER HAVING MORE THAN ONE
          * BIT SET , THEN THAT NUMBER IS NOT A POWER OF TWO *
- **********************************************************************************
+         **********************************************************************************
          */
         int x = num - 1;
         return num > 0 && (num & x) == 0;
@@ -68,9 +69,11 @@ public class Bitwise1 {
          * To check if ith bit for any given number is set , we need to peform
          * below steps , let say number is N
          *
-         * 1. Find another Number with expression 2^i , i.e 1 << i, let say that number id M 
-         * 2. Then do X = M & N , the result number will have only ith bit set and rest is un-set 
-         * 3. if all the bit are unset then the  number does't have any bit set
+         * 1. Find another Number with expression 2^i , i.e 1 << i, let say that number
+         * id M
+         * 2. Then do X = M & N , the result number will have only ith bit set and rest
+         * is un-set
+         * 3. if all the bit are unset then the number does't have any bit set
          */
 
         int x = 1 << ith;
@@ -94,19 +97,22 @@ public class Bitwise1 {
      * number 1. Check if the ith bit is set or not if ith bit is set print 1
      * else 0
      * Other approach , recursivley we will devide the number by 2 if num > 0
+     * 
      * @param num
      */
     public static void bitwise(int num) {
 
         /**
-         * In for loop , we are starting from 2^i , i will be 8bit or 32bit or 64bit operation
+         * In for loop , we are starting from 2^i , i will be 8bit or 32bit or 64bit
+         * operation
          * every divisible by 2 of the i will move every single bit ,
          * e.g i = 2^8 => 256, divide i by 2 => 128 => 2^7....
          */
         for (int i = 1 << 8; i > 0; i = i >> 1) {
             /**
              * i = 2^8 ,
-             * then doing n&i , so here we don't have to Math.pow(2^i) , beause we already moving i by 2^i , where i = i/2
+             * then doing n&i , so here we don't have to Math.pow(2^i) , beause we already
+             * moving i by 2^i , where i = i/2
              */
             int x = num & i;
             if (x >= 1) {
@@ -117,37 +123,40 @@ public class Bitwise1 {
         }
     }
 
-    public static void bitwise1(int num){
-        if(num > 0){
+    public static void bitwise1(int num) {
+        if (num > 0) {
             bitwise1(num >> 1);
         }
         System.out.print(num % 2);
     }
 
-
-
-
     /**
      * 1's complement of number we can calculate by below approach
-     * 1. calculate number set bit , lat say  => n
+     * 1. calculate number set bit , lat say => n
      * 2. calculate two to the power of number of bit , i.e 2^n
      * 3. then subtract original number with that number
      */
 
-     public static int onesComplement(int num){
+    public static int onesComplement(int num) {
         int count = 0;
         int x = num;
         while (num > 0) {
-            if(num%2 >= 1){
+            if (num % 2 >= 1) {
                 count++;
             }
-            num = num / 2; 
+            num = num / 2;
         }
         System.out.println(count);
-        int num1 = ((int)Math.pow(2, count)) - 1;
+        int num1 = ((int) Math.pow(2, count)) - 1;
         return x - num1;
-     }
+    }
 
+    public static int setIthBit(int num, int ith) {
+        return num | 1 << ith;
+         // convert | to & , then this will provide the check if ith bit set or not
+         // convert | to (& ~) to clear the ith bit
+         // convert | to ^ to toogele ith bit
 
+    }
 
 }

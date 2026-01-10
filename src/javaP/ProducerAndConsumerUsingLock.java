@@ -31,6 +31,7 @@ class ProducerConsumer{
            Thread.sleep(3000);
            consumerWait.signalAll();
         } catch (Exception e) {
+            Thread.interrupted();
             e.printStackTrace();
         }finally{
             lock.unlock();

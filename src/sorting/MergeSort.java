@@ -3,7 +3,7 @@ package sorting;
 public class MergeSort {
 
     public static void main(String[] args) {
-        int[] a = {1, 20, 6, 4, 5};
+        int[] a = {90, -1, 2, 0, 6, 2, -4, 8,-100,900000,4,0,1};
         sort(a, 0, a.length - 1);
         for (int a1 : a) {
             System.out.print(a1 + ",");
@@ -13,7 +13,7 @@ public class MergeSort {
 
     /**
      * The time complexity of below algoritham is : O(nlog(n)) TN =
-     * T(N/2)+T(N/2)+T(N) = 2T(N/2)+T(N) by mater theoram , it will be nlogn
+     * T(N/2)+T(N/2)+T(N) = 2T(N/2)+T(N) by master theoram , it will be nlogn
      *
      * @param a
      * @param l

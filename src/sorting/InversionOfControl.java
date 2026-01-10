@@ -2,7 +2,7 @@ package sorting;
 
 public class InversionOfControl {
     public static void main(String[] args) {
-        int[] a = {5,3,2,1};
+        int[] a = {2, 4, 1, 3, 5};
         System.out.println(inversionOfControl(a,0,a.length-1));
         System.out.println(inversionOfControll(a));
     }
