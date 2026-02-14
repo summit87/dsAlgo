@@ -9,7 +9,7 @@ import java.util.concurrent.RecursiveTask;
  */
 public class ForkJoinExample1 {
     public static void main(String[] args) {
-        int len = 11;
+        int len = 11111111;
         Long[] array = new Long[len];
         for(int i =0;i<len;i++){
             array[i] = Long.valueOf(i);
@@ -17,10 +17,11 @@ public class ForkJoinExample1 {
        ForkJoinPool forkJoinPool = new ForkJoinPool(2);
        Long res = forkJoinPool.invoke(new SumTask(array, 0, len-1));
        System.out.println(res);
+       System.out.println(result(array));
 
     }
 
-    private  static long result(long[] array){
+    private static long result(Long[] array){
         long sum = 0l;
         for(int i =0;i<array.length;i++){
             sum+=array[i];
@@ -52,9 +53,10 @@ class SumTask extends RecursiveTask<Long>{
        int mid = (left+right)/2;
      
        SumTask leftSumTask = new SumTask(array,left,mid);
-       SumTask righSumTask = new SumTask(array, mid, right);
+       SumTask righSumTask = new SumTask(array, mid+1, right);
        leftSumTask.fork();
-       Long rightSum = righSumTask.compute();
+       righSumTask.fork();
+       Long rightSum = righSumTask.join();
        Long leftSum = leftSumTask.join();
        return leftSum+rightSum;
     }

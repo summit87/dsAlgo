@@ -243,4 +243,14 @@ public class TreeNode {
         return tn;
     }
 
+
+    public static TreeNode createTree5(){
+        TreeNode tn = new TreeNode(3);
+        tn.setLeft(new TreeNode(9));
+        tn.setRight(new TreeNode(20));
+        tn.getRight().setLeft(new TreeNode(15));
+        tn.getRight().setRight(new TreeNode(7));
+        return tn;
+    }
+
 }
