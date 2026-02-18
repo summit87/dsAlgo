@@ -10,7 +10,10 @@ public class Bitwise1 {
         // System.out.println(extractLastBit(0));
         // bitwise1(5);
         // System.out.println(onesComplement(8));
-        System.out.println(setIthBit(4, 0));
+        //System.out.println(setIthBit(4, 0));
+        int n=2;
+        n >>= 2;
+        System.out.println(""+n);
     }
 
     public static void leftShift() {
